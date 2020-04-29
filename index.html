@@ -1,68 +1,122 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pilot</title>
+<head>
+  <title>The Fish Fanatic</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" conotent="width=device-width, initial-scale=1.0">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="main.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="main.css">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Righteous&display=swap" rel="stylesheet">
 
-        <script src="https://kit.fontawesome.com/2f380eab37.js" crossorigin="anonymous"></script>
-    </head>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/2f380eab37.js" crossorigin="anonymous"></script>
+</head>
 
-    <body>
-        <!-- MOBILE MENU -->
-        <!-- Simulate a smartphone / tablet -->
-        <div class="mobile-container">
-        
-          <!-- Top Navigation Menu -->
-          <div class="topnav">
-            <a class="mobile-title" href="index.html">Pilot</a>
-            <div id="myLinks">
-              <a href="index.html">Find Your Next Binge</a>
-              <a href="photography.html">Contact</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>  
-          <!-- End smartphone / tablet look -->
-        </div>
+<body>
+  <!-- MOBILE MENU -->
+  <div class="mobile-container"> <!-- open .mobile-container -->
+    <div class="topnav"> <!-- open .topnav -->
+      <a class="mobile-title" href="index.html"><img src="img/ff-logo.svg" alt="logo for The Fish Fanatic"></a>
+      <div id="myLinks"> <!-- open #myLinks -->
+        <a href="index.html">Home</a>
+        <a href="getting-started.html">Getting Started</a>
+        <a href="contact.html">Contact</a>
+      </div> <!-- close #myLinks-->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> <!-- close .topnav -->
+  </div> <!-- close .mobile-container -->
 
-      <div class="header"> <!-- open .header -->
-        <div class="logo"> <!-- open .logo -->
-          <h1><a href="index.html">Pilot</a></h1>
-        </div> <!-- close .logo -->
-      <div class="nav"> <!-- open .nav -->
-        <ul>
-          <li><a href="binge.html">Find Your Next Binge</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div> <!-- close .nav -->
-      </div> <!-- close .header -->
+  <!-- DESKTOP MENU -->
+  <div class="header"> <!-- open .header -->
+    <div class="logo"> <!-- open .logo -->
+      <a href="index.html"><img class="mobile-title" src="img/ff-logo.svg" alt="logo for The Fish Fanatic"></a>
+    </div> <!-- close .logo -->
+    <div class="nav"><!-- open .nav -->
+      <ul>
+        <li><a href="getting-started.html">Getting Started</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div><!-- close .nav -->
+  </div> <!-- close .header -->
 
-      <div class="landing"><!-- open .landing -->
-        <h2>Can't decide what to watch next?</h2>
-        <h3>That's what we're here for! Use our generator or read our reviews to find your new favorite show.</h3>
-        <div class="button-div">
-          <a href="binge.html" class="button">Find Your Next Binge</a>
-        </div>
-      </div> <!-- close .landing -->
-      
+  <div class="gs-content"> <!-- open .gs-content-->
+    <div class="intro"> <!-- open .intro -->
+      <h2>Welcome to The Fish Fanatic!</h2>
+      <p>When I first wanted to get fish, I really wished I could find a good site that answered a bunch of my super simple questions. So, I decided to make one now that I've been in the hobby for a while!</p>
+      <a href="getting-started" class="button">Get Started Now!</a>
+  </div> <!-- close .intro -->
+    <div class="fish-facts"> <!-- open .fish-facts -->
+      <div class="fish"> <!-- open .fish -->
+        <div class="fish-pic"> <!-- open .fish-pic -->
+          <img src="img/home-fish.jpg" alt="orange guppy fish in a tank">
+          <cite>Photo by HeungSoon on Pixabay</cite>
+        </div> <!-- close .fish-pic -->
+        <div class="info"> <!-- open .info -->
+          <h3>Ten Reasons to Get a Fish Tank NOW</h3>
+          <ol>
+            <li>Relaxing to watch</li>
+            <li>Very quiet pets</li>
+            <li>Great starter pets</li>
+            <li>Cheaper than other pets</li>
+            <li>Rewarding hobby</li>
+            <li>Aren't super needy</li>
+            <li>Don't take up much space</li>
+            <li>Come in lots of different types</li>
+            <li>Provide uplifting decor</li>
+            <li>Won't make a mess in the house</li>
+          </ol>
+        </div> <!-- close .info -->
+      </div> <!-- close .fish -->
+    </div> <!-- close .fish-facts -->
+  </div> <!-- close .gs-content -->
 
-      <script>
-          function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-              x.style.display = "none";
-            } else {
-              x.style.display = "block";
-            }
-          }
-      </script>
-    </body>
+  <div class="footer-div"> <!-- open .footer-div -->
+    <div class="form"> <!-- open .form -->
+      <form action="https://formspree.io/xzbjpvqe" method="POST">
+        <h3>Have a question?</h3>
+        <div class="form-item"> <!-- open .form-item -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </div> <!-- close .form-item -->
+
+        <div class="form-item"> <!-- open .form-item -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div> <!-- close .form-item -->
+
+        <div class="form-item"> <!-- open .form-item -->
+          <label for="text">Type your question here:</label>
+          <textarea id="text" maxlength="1000"></textarea>
+        </div> <!-- close .form-item -->
+
+        <div class="form-item"> <!-- open .form-item -->
+          <input id="submit-button" type="submit" value="Send"></input>
+        </div> <!-- close .form-item -->
+      </form> 
+    </div> <!-- close .form -->
+    <div class="copyright">
+        The Fish Fanatic &copy; 2020
+    </div>
+  </div> <!-- close .footer-div -->
+
+<!-- Mobile Menu Script -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+
+</body>
+
 </html>

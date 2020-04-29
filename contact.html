@@ -1,64 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Pilot</title>
+<head>
+  <title>The Fish Fanatic</title>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" conotent="width=device-width, initial-scale=1.0">
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="main.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="main.css">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Gotu&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Righteous&display=swap" rel="stylesheet">
 
-        <script src="https://kit.fontawesome.com/2f380eab37.js" crossorigin="anonymous"></script>
-    </head>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/2f380eab37.js" crossorigin="anonymous"></script>
+</head>
 
-    <body>
-        <!-- MOBILE MENU -->
-        <!-- Simulate a smartphone / tablet -->
-        <div class="mobile-container">
+<body>
+  <!-- MOBILE MENU -->
+  <div class="mobile-container"> <!-- open .mobile-container -->
+    <div class="topnav"> <!-- open .topnav -->
+      <a class="mobile-title" href="index.html"><img src="img/ff-logo.svg" alt="logo for The Fish Fanatic"></a>
+      <div id="myLinks"> <!-- open #myLinks -->
+        <a href="index.html">Home</a>
+        <a href="getting-started.html">Getting Started</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div> <!-- close #myLinks-->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> <!-- close .topnav -->
+  </div> <!-- close .mobile-container -->
+
+  <!-- DESKTOP MENU -->
+  <div class="header"> <!-- open .header -->
+    <div class="logo"> <!-- open .logo -->
+      <a href="index.html"><img class="mobile-title" src="img/ff-logo.svg" alt="logo for The Fish Fanatic"></a>
+    </div> <!-- close .logo -->
+    <div class="nav"><!-- open .nav -->
+      <ul>
+        <li><a href="getting-started.html">Getting Started</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div><!-- close .nav -->
+  </div> <!-- close .header -->
+
+  <div class="gs-content"> <!-- open .gs-content-->
+    <div class="intro"> <!-- open .intro -->
+      <h2>Contact</h2>
+      <p>We try to keep this site as helpful and up to date as possible. That being said, fishkeeping isn't a simple, one-answer only hobby. Everyone has their own things that they find that work and that's totally okay! We recommend that you do as much research as possible!</p>
+  </div> <!-- close .intro -->
+    <div class="fish-facts"> <!-- open .fish-facts -->
+      <div class="fish"> <!-- open .fish -->
+        <div class="fish-pic"> <!-- open .fish-pic -->
+          <img src="img/contact-fish.jpg" alt="multi-colored betta fish in a tank with green plants">
+          <cite>Photo by Huy Phan on Unsplash</cite>
+        </div> <!-- close .fish-pic -->
+        <div class="info"> <!-- open .info -->
+          <h3>Still have questions?</h3>
+          <p>You're in luck! I love talking about fish. Follow me on Facebook or Instagram for fishkeeping tips and tricks, advice, and fun fish pictures! You can also contact me on here or send me an email at thefishfanatic@email.com for any individualized questions you might have. I'm always happy to answer them!</p>
+          <div class="icons"> <!-- open .icons -->
+            <a target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
+            
+            <a target="_blank" class="icon2"><i class="fab fa-facebook"></i></a>
         
-          <!-- Top Navigation Menu -->
-          <div class="topnav">
-            <a class="mobile-title" href="index.html">Pilot</a>
-            <div id="myLinks">
-              <a href="index.html">Find Your Next Binge</a>
-              <a href="photography.html">Contact</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-          </div>  
-          <!-- End smartphone / tablet look -->
-        </div>
+            <a target="_blank" class="icon2"><i class="far fa-envelope"></i></a>
+          </div> <!-- close .icons -->
+        </div> <!-- close .info -->
+      </div> <!-- close .fish -->
+    </div> <!-- close .fish-facts -->
+  </div> <!-- close .gs-content -->
 
-      <div class="header"> <!-- open .header -->
-        <div class="logo"> <!-- open .logo -->
-          <h1><a href="index.html">Pilot</a></h1>
-        </div> <!-- close .logo -->
-      <div class="nav"> <!-- open .nav -->
-        <ul>
-          <li><a href="binge.html">Find Your Next Binge</a></li>
-          <li><a class="active"  href="contact.html">Contact</a></li>
-        </ul>
-      </div> <!-- close .nav -->
-      </div> <!-- close .header -->
+  
 
-      <div class="landing"><!-- open .landing -->
-        <h3>This page will have a contact form so viewers can send in suggestions for reviews and/or shows to add to the generators.</h3>
-      </div> <!-- close .landing -->
-      
+  <div class="footer-div"> <!-- open .footer-div -->
+    <div class="form"> <!-- open .form -->
+      <form action="https://formspree.io/xzbjpvqe" method="POST">
+        <h3>Have a question?</h3>
+        <div class="form-item"> <!-- open .form-item -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+        </div> <!-- close .form-item -->
 
-      <script>
-          function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-              x.style.display = "none";
-            } else {
-              x.style.display = "block";
-            }
-          }
-      </script>
-    </body>
+        <div class="form-item"> <!-- open .form-item -->
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+        </div> <!-- close .form-item -->
+
+        <div class="form-item"> <!-- open .form-item -->
+          <label for="text">Type your question here:</label>
+          <textarea id="text" maxlength="1000"></textarea>
+        </div> <!-- close .form-item -->
+
+        <div class="form-item"> <!-- open .form-item -->
+          <input id="submit-button" type="submit" value="Send"></input>
+        </div> <!-- close .form-item -->
+      </form> 
+    </div> <!-- close .form -->
+    <div class="copyright">
+        The Fish Fanatic &copy; 2020
+    </div>
+  </div> <!-- close .footer-div -->
+
+<!-- Mobile Menu Script -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+
+</body>
+
 </html>

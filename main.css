@@ -1,12 +1,16 @@
-/* font-family: 'Gotu', sans-serif;
+/* font-family: 'Righteous', cursive;
 font-family: 'Open Sans', sans-serif; */
 
 body {
     font-family: 'Open Sans', sans-serif;
-    color: #0c0f12;
+    color: #464646;
     font-size: 14px;
     width: 100%;
     margin: 0;
+}
+
+h1 .h1{
+    font-family: 'Righteous', cursive;
 }
 
 h2 {
@@ -17,17 +21,16 @@ h2 {
 h3 {
     margin-block-start: 0;
     margin-block-end: 0; 
-    font-weight: normal;
 }
 
 a {
     text-decoration: none;
-    color: #0c0f12;
+    color: #464646;
     transition: all ease-in-out .25s;
 }
 
 a:hover {
-    color: #902663;
+    color: #efaa84;
 }
 
 .header {
@@ -36,7 +39,12 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    font-family: 'Gotu', sans-serif;
+    font-family: 'Righteous', sans-serif;
+}
+
+.mobile-title {
+    padding-top: 15px;
+    padding-left: 15px;
 }
 
 .logo h1 {
@@ -53,61 +61,211 @@ a:hover {
 
 .nav li {
     padding: 0 25px 0 25px;
+    font-size: 1.5em;
 }
 
 .active {
     text-decoration: underline;
 }
 
-.landing {
-    background-color: #a1dac4;;
-    display: flex;
-    flex-direction: column;
-}
-
-.landing h2 {
-    color: #0c0f12;
-    font-size: 4em;
-    margin-top: 50px;
-    margin-left: 25px;
-    font-family: 'Gotu', sans-serif;
-}
-
-.landing h3 {
-    color: #0c0f12;
-    font-size: 2em;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-}
-
 .button {
-    background-color:  #fff; /* Green */
+    background-color:  #fff; 
     border: none;
+    color: #464646;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 1.3em;
-    font-family: 'Gotu', sans-serif;
-    margin-bottom: 50px;
-    margin-left: 25px;
+    font-size: 14px;
+    margin: 4px 2px;
+    margin-bottom: 10px;
     transition-duration: 0.4s;
     cursor: pointer;
-    /* padding-bottom: 15px; */
-    border-radius: 15px;
-    width: 25%;
+    padding-bottom: 15px;
+    border-radius: 5px;
 }
 
-.button-div a:hover {
-    background-color: #902663;
+.button a {
+    color: #464646;
+}
+
+.button a:hover {
+    color: #efaa84;
+}
+
+.gs-content {
+    background-color: #f0eed5;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+.gs-content h2 {
+    font-size: 3em;
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.intro {
+    background-color: #464646;
     color: #fff;
+    padding: 50px 20px 50px 20px;
+    margin-top: 25px;
+    width: 80%;
 }
 
+.intro p {
+    font-size: 1.5em;
+}
 
+.steps {
+    background-color: #efaa84;
+    padding: 30px 20px 30px 20px;
+    width: 80%;
+    margin-top: 25px;
+}
 
+.steps p {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
 
+.fish-facts {
+    background-color: #efaa84;
+    padding: 30px 20px 30px 20px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin: 25px auto 0 auto;
+    width: 80%;
+}
 
+.fish-facts h2 {
+    margin-bottom: 20px;
+}
+
+.fish {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.fish-pic {
+    width: 50%;
+    padding: 15px 0 15px 0;
+}
+
+.fish-pic img {
+    width: 100%;
+}
+
+.info {
+    width: 25%;
+    padding: 20px;
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.info2 {
+    text-align: right;
+}
+
+.info h3 {
+    font-size: 1.75em;
+}
+
+.info p {
+    margin: 0;
+}
+
+.icons {
+    font-size: 2.5em;
+    padding-top: 15px;
+}
+
+.icon {
+    padding-right: 15px;
+}
+
+.icon2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.icons a:hover {
+    color: #fff;
+    transition: all ease-in-out .25s;
+}
+
+.footer-div {
+    background-color: #464646;
+    color: #fff;
+    padding: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form h3 {
+    font-size: 1.75em;
+    font-family: 'Righteous', sans-serif;
+    font-weight: normal;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.form-item input {
+    border-radius: 5px;
+    height: 30px;
+    width: 100%;
+}
+
+.form-item textarea {
+    border-radius: 5px;
+    width: 100%;
+}
+
+#submit-button {
+    border-radius: 5px;
+    width: 40%;
+    font-size: 1em;
+}
+
+#submit-button:hover {
+    background-color: #efaa84;
+    color: #fcfcfc;
+    border: 2px solid #efaa84;
+}
+
+.copyright {
+    padding: 20px 0 0 5px;
+}
 
   /* -------- MOBILE MEDIA QUERY ------- */
 @media screen and (max-width: 767px){
@@ -124,7 +282,7 @@ a:hover {
 
     .topnav #myLinks {
         display: none;
-        background-color: #902663;
+        background-color: #efaa84;
     }
       
     #myLinks a {
@@ -137,13 +295,19 @@ a:hover {
     }
 
     #myLinks a:hover {
-        color: #902663;
+        color: #efaa84;
     }
       
     .mobile-title {
-        font-family: 'Gotu', sans-serif;
+        font-family: 'Righteous', sans-serif;
         font-size: 1.8em;
         padding-left: 16px;
+        padding-top: 15px;
+    }
+
+    .mobile-title img {
+        padding-top: 15px;
+        width: 60%;
     }
       
     .topnav a.icon {
@@ -153,9 +317,9 @@ a:hover {
         position: absolute;
         right: 0;
         top: 0;
-        padding-top: 8px;
+        padding-top: 15px;
         padding-right: 16px;
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
       
     /* CLOSE MOBILE MENU */
@@ -173,10 +337,48 @@ a:hover {
         font-size: 1em;
         width: 30%;
     }
+
+    .gs-content h2 {
+        font-size: 1.75em;
+    }
+
+    .intro p {
+        font-size: 1em; 
+    }
+
+    .fish {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fish-pic {
+        width: 95%;
+    }
+
+    .info {
+        width: 90%;
+        justify-content: center;
+        text-align: left;
+        margin-bottom: 30px;
+        padding: 0 20px 10px 20px;
+    }
+
+
+
+
+    .fish3 {
+        display: none;
+    }
 }
+
+
 
 @media screen and (min-width: 767px) {
     .mobile-container {
+        display: none;
+    }
+
+    .fish2 {
         display: none;
     }
 }
